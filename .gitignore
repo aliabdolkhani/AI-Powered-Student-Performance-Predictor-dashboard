@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Secrets
+.env
+openai_key.txt
+secret/
+secrets/
+keys/
+*.key
+*.pem
+
+# Streamlit local secrets
+.streamlit/secrets.toml
+__pycache__/ 
