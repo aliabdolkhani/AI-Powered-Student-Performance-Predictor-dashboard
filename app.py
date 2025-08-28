@@ -293,7 +293,6 @@ Incorrect Questions:
             model = ARIMA(weekly_acc, order=(1,1,1))
             model_fit = model.fit()
             arima_value = model_fit.forecast(steps=1).values[0] * 100
-            st.info(f"ARIMA Forecast (statistical model): {arima_value:.2f}%")
 
             # Plot observed vs forecast
             future_dates = pd.date_range(weekly_acc.index[-1] + pd.offsets.Week(), periods=1, freq="W")
